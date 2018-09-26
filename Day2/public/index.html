@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cute dogs</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="\bootstrap\dist\css\bootstrap.css"/>
+</head>
+<body class=allpage>
+        <script id="menu-template" type="text/x-handlebars-template">
+            <ul class="list-group-item list-group-item-dark">
+              {{#each dogs}}
+                <div>the {{name}} is {{age}} years old.</div>
+                <li><a href="{{link}}"></a></li>
+              {{/each}}
+            </ul>
+          </script>
+          
+          <div class="dogs">
+          </div>
+    <button type="button" class="dog-button btn btn-dark">Show me all the cute dogs you have!</button>
+    <script src="\jquery\dist\jquery.js"></script>
+    <script src="\handlebars\dist\handlebars.js"></script>
+    <script src="main.js"></script> 
+         
+</body>
+</html>
